@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <Platforms>AnyCPU;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\handlers\MobsHandler.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\handlers\MobsHandler.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.11" />
+    <PackageReference Include="MySqlConnector" Version="2.2.7" />
+    <PackageReference Include="PacketDotNet" Version="1.4.7" />
+    <PackageReference Include="PhotonPackageParser" Version="4.1.0" />
+    <PackageReference Include="SharpPcap" Version="6.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\handlers\MobsHandler.js" />
+  </ItemGroup>
+
+</Project>
